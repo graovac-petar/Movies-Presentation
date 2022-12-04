@@ -5,24 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/stylePocetna.css" />
+    <link rel="stylesheet" href="../css/styleNavbar.css" />
+    <link rel="stylesheet" href="../css/dugme.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <title>Filmovi</title>
   </head>
   <body>
+    <nav>
+      <div class="navbar-wrapper">
+        <a href="pocetna.html">
+          <h1>Filmovi</h1>
+        </a>
+        <div class="menu">
+          <a href="pocetna.html" class="is-active">Home</a>
+          <a href="ponuda.html">Ponuda Filmova</a>
+          <a href="forma.html">Forma</a>
+          <a href="oNama.html">O nama</a>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="pocetna.html" class="is-active">Home</a>
+      <a href="ponuda.html">Ponuda Filmova</a>
+      <a href="forma.html">Forma</a>
+      <a href="oNama.html">O nama</a>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+
+    <br />
+    <br />
+
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
-        <img src="../slike/11.jpeg" style="width: 100%" />
-        <div class="text">Caption Text</div>
+        <img src="../slike/107.jpg" style="width: 100%" />
+        <div class="text">Groot 1</div>
       </div>
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <img src="../slike/2.jpeg" style="width: 100%" />
-        <div class="text">Caption Two</div>
+        <img src="../slike/203.jpg" style="width: 100%" />
+        <div class="text">Spiderman</div>
       </div>
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
-        <img src="../slike/3.jpeg" style="width: 100%" />
-        <div class="text">Caption Three</div>
+        <img src="../slike/204.jpg" style="width: 100%" />
+        <div class="text">Captain America</div>
       </div>
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -33,6 +72,34 @@
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <footer class="footer">
+      <div class="levofooter">
+        <h2>Društvene mreže</h2>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <br />
+        <a href="https://www.facebook.com/">Facebook</a>
+        <br />
+        <a href="https://www.youtube.com/">Youtube</a>
+      </div>
+
+      <div class="slikafooter">
+        <a href="pocetna.html">
+          <img src="../slike/ikonica.jpg" width="120" height="120" />
+        </a>
+      </div>
+
+      <div class="desnofooter">
+        <h2>Kontakt</h2>
+        <p>Adresa: Ulica 1a</p>
+        <p>Telefon: 0643225256</p>
+        <p>Mail: filmovi@gmail.com</p>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="dugme" class="vrh">⇧</button>
+
     <script src="../script/pocetnaScript.js"></script>
+    <script src="../script/navbarScript.js"></script>
+    <script src="../script/dugme.js"></script>
   </body>
 </html>

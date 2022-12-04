@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/forma.css" />
+    <link rel="stylesheet" href="../css/dugme.css" />
+    <link rel="stylesheet" href="../css/styleNavbar.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar-wrapper">
+        <a href="pocetna.html">
+          <h1>Filmovi</h1>
+        </a>
+        <div class="menu">
+          <a href="pocetna.html" class="is-active">Home</a>
+          <a href="ponuda.html">Ponuda Filmova</a>
+          <a href="forma.html">Forma</a>
+          <a href="oNama.html">O nama</a>
+        </div>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="pocetna.html" class="is-active">Home</a>
+      <a href="ponuda.html">Ponuda Filmova</a>
+      <a href="forma.html">Forma</a>
+      <a href="oNama.html">O nama</a>
+    </nav>
+    <br /><br /><br /><br />
+    <div class="forma">
+      <form class="forma-upitnik">
+        <h1>Prijava za newsletter</h1>
+
+        <label for="pol">Izaberite pol</label>
+        <select name="pol" id="pol">
+          <option value="zenski">Ženski</option>
+          <option value="muski">Muški</option>
+          <option value="drugo">Drugo</option>
+        </select>
+        <br />
+        <br />
+        <label for="ime">Ime</label>
+        <input
+          type="text"
+          placeholder="Ime"
+          class="ime"
+          name="ime"
+          size="25"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        <label for="prezime">Prezime</label>
+        <input
+          type="text"
+          placeholder="Prezime"
+          class="prezime"
+          name="prezime"
+          size="25"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        <label for="e-mail">E-mail</label>
+        <input
+          type="text"
+          placeholder="E-mail"
+          class="e-mail"
+          name="e-mail"
+          size="25"
+          manxlength="30"
+        />
+        <br />
+        <br />
+        <label for="zanr" class="zanr">Izaberite žanr filma</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="akcioni" checked />
+        <label for="akcioni">Akcioni</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="dokumentarni" />
+        <label for="dokumentarni">Dokumentarni</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="triler" />
+        <label for="triler">Triler</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="horor" />
+        <label for="horor">Horor</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="komedija" />
+        <label for="komedija">Komedija</label>
+        <br />
+        <input type="radio" name="zanr" class="zanr" value="drugo" />
+        <label for="drugo">Drugo</label>
+        <br />
+        <br />
+        <label for="komentar">Vaš predlog za poboljšanje newsletter-a</label>
+        <br />
+        <textarea
+          name="komentar"
+          class="komentar"
+          id="kom"
+          cols="60"
+          rows="10"
+        ></textarea>
+        <br />
+        <button class="posalji" type="button">Pošalji</button>
+        <button class="obrisi" type="reset">Obriši</button>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="levofooter">
+        <h2>Društvene mreže</h2>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <br />
+        <a href="https://www.facebook.com/">Facebook</a>
+        <br />
+        <a href="https://www.youtube.com/">Youtube</a>
+      </div>
+
+      <div class="slikafooter">
+        <a href="pocetna.html">
+          <img src="../slike/ikonica.jpg" width="120" height="120" />
+        </a>
+      </div>
+
+      <div class="desnofooter">
+        <h2>Kontakt</h2>
+        <p>Adresa: Ulica 1a</p>
+        <p>Telefon: 0643225256</p>
+        <p>Mail: filmovi@gmail.com</p>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="dugme" class="vrh">⇧</button>
+
+    <script src="../script/forma.js"></script>
+    <script src="../script/dugme.js"></script>
+  </body>
+</html>

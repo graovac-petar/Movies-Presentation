@@ -1,0 +1,95 @@
+body {
+    background-color: #03071E;
+}
+
+p {
+    color: #8c38ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boks {
+    position: relative;
+    min-height: 100vh;
+}
+
+.boks h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+    color: #FFF;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+
+.boks .slikeRed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 60px;
+
+}
+
+.boks .slikeRed .slika {
+    height: 400px;
+    width: 270px;
+
+    box-shadow: 0 5px 15px rgb(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.boks .slikeRed .slika img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.boks .slikeRed .slika:hover img {
+    transform: scale(1.1);
+}
+
+.boks .popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.boks .popUp span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.boks .popUp img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .boks .popUp img {
+        width: 95%;
+    }
+}
