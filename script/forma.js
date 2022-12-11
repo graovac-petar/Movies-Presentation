@@ -1,28 +1,35 @@
 var dugme1 = document.querySelector(".posalji");
-var ime = document.getElementsByClassName("ime");
-var prezime = document.getElementsByClassName("prezime");
-var email = document.getElementsByClassName("e-mail");
+var ime = document.querySelector(".ime");
+var prezime = document.querySelector(".prezime");
+var email = document.querySelector(".e-mail");
+var forma = document.querySelector(".forma");
 // const zanr = document.getElementsByClassName("zanr");
 
 function prijava() {
   if (provera()) {
     alert("Uspesno ste se prijavili");
     // myWindow();
-    window.location.reload();
+    //window.location.reload();
   }
 }
 
-dugme1.addEventListener("click", prijava);
+forma.addEventListener("submit", (e) => {
+  e.preventDefault();
+  prijava();
+});
+//dugme1.addEventListener("click", prijava);
 
 function provera() {
-  if (ime.value === "") {
-    alert("Popunite sva polja!");
+  console.log(ime);
+  console.log(ime.value);
+  if (ime.value == "") {
+    alert("Popunite ime!");
     return false;
   } else if (prezime.value === "") {
-    alert("Popunite sva polja!");
+    alert("Popunite prezime!");
     return false;
   } else if (email.value === "") {
-    alert("Popunite sva polja!");
+    alert("Popunite email!");
     return false;
   } else {
     return true;
