@@ -3,11 +3,22 @@ var ime = document.querySelector(".ime");
 var prezime = document.querySelector(".prezime");
 var email = document.querySelector(".e-mail");
 var forma = document.querySelector(".forma");
+var kom = document.querySelector("#kom");
+var pol = document.querySelector("#pol");
 // const zanr = document.getElementsByClassName("zanr");
 
 function prijava() {
   if (provera()) {
     alert("Uspesno ste se prijavili");
+    const prijava = {
+      ime: ime.value,
+      prezime: prezime.value,
+      email: email.value,
+      kom: kom.value,
+      pol: pol.options[pol.selectedIndex].value,
+    };
+
+    localStorage.setItem("Prijava", JSON.stringify(prijava));
     // myWindow();
     //window.location.reload();
   }
