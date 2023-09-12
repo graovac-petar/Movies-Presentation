@@ -7,7 +7,7 @@ var kom = document.querySelector("#kom");
 var pol = document.querySelector("#pol");
 // const zanr = document.getElementsByClassName("zanr");
 
-function prijava() {
+async function prijava() {
   if (provera()) {
     alert("Uspesno ste se prijavili");
     const prijava = {
@@ -21,6 +21,17 @@ function prijava() {
     localStorage.setItem("Prijava", JSON.stringify(prijava));
     // myWindow();
     //window.location.reload();
+
+    const result = await fetch("http://localhost:5000/api/prijava", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(prijava),
+    });
+    const data = await result.json();
+
+    console.log(data);
   }
 }
 
